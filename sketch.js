@@ -56,7 +56,7 @@ if (road.x<450) {
 line2.visible = false
  if(gameState === "play"){  
   
-  camera.position.y = man.y
+ 
   if(keyDown("space")){
    
  man.velocityY = -4;
@@ -71,6 +71,7 @@ man.velocityY = man.velocityY + 0.01
    }
   if(man.isTouching(police)){
 man.velocityX = 0
+   man.velocityY = 0
 road.velocityX = 0
 man.visible = false
 fill("white")
