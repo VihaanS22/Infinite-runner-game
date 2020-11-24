@@ -14,8 +14,8 @@ function preload(){
  roadImg = loadImage("road.png")
 policeImg = loadImage("police.png")
 
-policeSound = loadSound("policeSound.mp3")
-walkieSound = loadSound("walkieSound.mp3")
+//policeSound = loadSound("policeSound.mp3")
+//walkieSound = loadSound("walkieSound.mp3")
 }
 
 
@@ -61,7 +61,7 @@ function draw() {
   if (road.x<450) {
     road.x = road.width/2;
     
-    policeSound.play()
+    //policeSound.play()
   }
 
   if(keyDown("space")){
@@ -82,7 +82,7 @@ if(keyDown("down")){
       cars.destroyEach()
    }
   if(man.isTouching(police)){
-    policeSound.stop()
+   // policeSound.stop()
     man.velocityX = 0
     road.velocityX = 0
     score = 0
@@ -93,7 +93,7 @@ if(keyDown("down")){
   }
   
  if(score >=2000){
- policeSound.stop()
+ //policeSound.stop()
 
   man.velocityX = 6
   score = 2000
