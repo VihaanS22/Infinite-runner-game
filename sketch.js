@@ -71,11 +71,11 @@ function draw() {
 man.velocityY = man.velocityY + 0.01   
 
 
-if(keyDown("down")){
+/*if(keyDown("down")){
   man.scale = 0.4
   man.velocityY = man.velocityY + 4
 }
-  
+  */
    if(cars.isTouching(man)){
       man.x = man.x - 20
      
