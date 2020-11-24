@@ -55,7 +55,7 @@ function draw() {
 
  if(gameState === "play"){  
   
-  score = score + Math.round(getFrameRate()/60);
+  //score = score + Math.round(getFrameRate()/60);
   line2.visible = false
   line1.visible = false
   if (road.x<450) {
@@ -91,17 +91,6 @@ if(keyDown("down")){
     text("YOU HAVE BEEN CAUGHT. BETTER LUCK NEXT TIME! PRESS F5 KEY TO PLAY AGAIN", 400, 350) 
 
   }
-  
- if(score >=2000){
- //policeSound.stop()
-
-  man.velocityX = 6
-  score = 2000
- fill("white")
-text("YOU ESCAPED. GOOD JOB!!", 350, 350)
-road.velocityX = 0
-
- }
 
   man.velocityY = man.velocityY + 0.1 
   
@@ -119,9 +108,9 @@ road.velocityX = 0
 
 
 
-textSize(20)
-fill("black")
- text("SCORE:"+ score, 20, 20)   
+//textSize(20)
+//fill("black")
+// text("SCORE:"+ score, 20, 20)   
   
   }
 
