@@ -54,7 +54,7 @@ function draw() {
 
 
  if(gameState === "play"){  
-  
+  camera.position.y = man.y
   //score = score + Math.round(getFrameRate()/60);
   line2.visible = false
   line1.visible = false
